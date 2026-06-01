@@ -775,7 +775,7 @@ def command_report(_: argparse.Namespace) -> None:
         "- News-only and price-plus-news ablations are included to make the incremental value of text features clearer.",
         "- The pipeline uses QQQ as the benchmark because it is available in FNSPID price history.",
         "- Transformer scoring was run on ESG keyword-filtered articles, not the full 23 GB news file.",
-        "- The project remains academic and data-mining focused; dashboard work is optional future work.",
+        "- The project remains academic and data-mining focused; the Colab notebook is the primary demo artifact.",
     ]
     output_path("reports", "results_summary.md").write_text("\n".join(summary), encoding="utf-8")
 
@@ -837,4 +837,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

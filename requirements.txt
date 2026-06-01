@@ -9,4 +9,3 @@ tqdm
 jupyter
 pyarrow
 fastparquet
-shap

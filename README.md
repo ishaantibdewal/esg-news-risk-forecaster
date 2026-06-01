@@ -19,6 +19,7 @@ classification with chronological train/validation/test splits.
 - `report/README.md`: local report build instructions.
 - `outputs/reports/results_summary.md`: generated metric summary.
 - `outputs/tables/` and `outputs/figures/`: generated result tables and plots.
+- `SUBMISSION_CHECKLIST.md`: final submission checklist and requirement mapping.
 
 Large raw/intermediate/model artifacts are intentionally not tracked. The raw
 FNSPID news CSV is about 23 GB and the full local `data/` directory is much
@@ -109,6 +110,12 @@ The reported test panel contains 5,852 ticker-weeks across 14 tickers from
 
 See `outputs/reports/results_summary.md`, `outputs/tables/`, and `report/main.pdf`
 for the full numbers.
+
+## Submission Checklist
+
+See `SUBMISSION_CHECKLIST.md` for the final submission package, files to
+exclude, full reproduction commands, report build commands, Colab demo link, and
+project-requirements mapping.
 
 ## Project Criteria Mapping
 
