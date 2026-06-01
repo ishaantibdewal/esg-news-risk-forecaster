@@ -43,7 +43,8 @@
 \urlstyle{same}
 \providecommand{\Description}[1]{}
 \providecommand{\keywords}[1]{\par\smallskip\noindent\textbf{Keywords:} #1\par}
-\captionsetup{font=small, skip=4pt}
+\captionsetup{font={small,it}, labelfont={bf,it}, skip=5pt}
+\captionsetup[subfigure]{font={small,it}, labelfont={bf,it}, skip=3pt}
 \setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
 \setlength{\floatsep}{8pt plus 2pt minus 2pt}
 \setlength{\intextsep}{8pt plus 2pt minus 2pt}
@@ -58,9 +59,9 @@
 \raggedbottom
 
 \newcommand{\headervisual}{%
-  \begin{center}
-    \includegraphics[width=\textwidth,trim=0 780bp 0 780bp,clip]{figures/header_banner.jpg}
-  \end{center}
+  \vspace{-0.6em}
+  \noindent\includegraphics[width=\textwidth,trim=0 610bp 0 610bp,clip]{figures/header_banner.jpg}%
+  \vspace{-0.6em}
 }
 
 \input{tables/summary_macros}
@@ -92,6 +93,7 @@
   \end{abstract}
   \keywords{ESG, financial news, volatility forecasting, risk prediction, FinBERT, ClimateBERT, FNSPID}
   \maketitle
+  \vspace{0.7em}
 \else
   \twocolumn[{%
     \maketitle
@@ -102,7 +104,7 @@
     This paper studies whether ESG-sensitive financial news representations improve short-horizon equity risk forecasting beyond market-only baselines. We construct a weekly ticker panel from FNSPID news and price histories, then combine ESG keyword counts, FinBERT sentiment, ClimateBERT climate relevance, and past-only market features. The primary tasks are 21-trading-day realized volatility regression and high-volatility classification, evaluated with chronological train, validation, and test splits. Price-history models are strong, reaching 0.0064 RMSE and 0.912 ROC-AUC on 2023 test weeks after tuning. The best selected configuration is price plus ClimateBERT, with 0.0063 RMSE, $R^2=0.524$, and 0.914 ROC-AUC. The results suggest that ESG text is not a substitute for market features, but climate-aware language signals can add modest incremental value when used as part of a disciplined risk-forecasting pipeline.
     \end{abstract}
     \keywords{ESG, financial news, volatility forecasting, risk prediction, FinBERT, ClimateBERT, FNSPID}
-    \vspace{0.2em}
+    \vspace{0.9em}
   }]
 \fi
 
@@ -144,12 +146,12 @@ Figures~\ref{fig:coverage-overview} and~\ref{fig:text-target-distributions} high
 
 \begin{figure*}[t]
   \centering
-  \begin{subfigure}[t]{0.64\textwidth}
+  \begin{subfigure}[t]{0.60\textwidth}
     \includegraphics[width=\linewidth]{figures/dataset_distribution.png}
     \caption{News coverage}
   \end{subfigure}
   \hfill
-  \begin{subfigure}[t]{0.32\textwidth}
+  \begin{subfigure}[t]{0.36\textwidth}
     \includegraphics[width=\linewidth]{figures/esg_category_distribution.png}
     \caption{ESG categories}
   \end{subfigure}
@@ -292,7 +294,7 @@ Hyperparameters are selected on the 2022 validation set and refit on train plus 
 \subsection{Reproducibility}
 The project repository is available at
 \url{https://github.com/ishaantibdewal/esg-news-risk-forecaster}.
-It contains preprocessing, feature generation, model evaluation, generated figures, tables, notebooks, the Streamlit demo script, and this report source. The README describes the main reproduction sequence: run staged pipeline commands for setup, bounded data inspection, chunked news filtering, price-label construction, feature generation, FinBERT and ClimateBERT scoring, panel construction, model evaluation, and report generation.
+It contains preprocessing, feature generation, model evaluation, generated figures, tables, the Colab-ready results notebook, and this report source. The README describes the main reproduction sequence: run staged pipeline commands for setup, bounded data inspection, chunked news filtering, price-label construction, feature generation, FinBERT and ClimateBERT scoring, panel construction, model evaluation, and report generation.
 
 \section{Results}
 \subsection{Overall Performance}

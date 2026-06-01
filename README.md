@@ -19,7 +19,6 @@ classification with chronological train/validation/test splits.
 - `report/README.md`: local report build instructions.
 - `outputs/reports/results_summary.md`: generated metric summary.
 - `outputs/tables/` and `outputs/figures/`: generated result tables and plots.
-- `app/streamlit_app.py`: optional interactive demo over saved prediction tables.
 
 Large raw/intermediate/model artifacts are intentionally not tracked. The raw
 FNSPID news CSV is about 23 GB and the full local `data/` directory is much
@@ -77,28 +76,23 @@ The transformer stages score ESG keyword-filtered articles by default to keep
 runtime manageable. Use `--all-news` only for a larger compute run. For a smoke
 test of the transformer commands, add `--max-articles 100`.
 
-## Results Walkthrough
+## Colab Demo
 
-For the best grading/demo path, use the notebook as the primary demo:
+The primary demo is the Colab-ready results notebook:
+
+<https://colab.research.google.com/github/ishaantibdewal/esg-news-risk-forecaster/blob/main/notebooks/results_report.ipynb>
+
+Run the notebook cells from top to bottom. It is designed to work directly from
+the GitHub repository outputs, without the 23 GB raw FNSPID CSV and without
+local Parquet intermediates.
 
 ```bash
 jupyter notebook notebooks/results_report.ipynb
 ```
 
-The notebook reads generated artifacts and walks through dataset construction,
-EDA, chronological splits, tuned results, ablations, diagnostics, and
-interpretation. This is the clearest "paper results" style demo.
-
-## Optional Interactive Demo
-
-After prediction tables exist, run:
-
-```bash
-streamlit run app/streamlit_app.py
-```
-
-The demo lets a user choose a ticker, week, and saved model prediction, then
-compares the selected ticker-week to peer predictions from the same week.
+The notebook walks through dataset construction, EDA, chronological splits,
+tuned results, ablations, diagnostics, saved prediction examples, and final
+interpretation. This is the clearest "paper results" style demo for grading.
 
 ## Main Generated Results
 
@@ -132,5 +126,4 @@ for the full numbers.
 - Results: model comparisons, ablations, tuned-vs-untuned checks, bootstrap delta
   checks, leakage checks, risk quintile analysis, and error/feature diagnostics.
 - GitHub reproducibility: this README gives environment setup, data layout,
-  staged commands, notebook usage, report build location, and demo instructions.
-
+  staged commands, Colab notebook usage, and report build location.

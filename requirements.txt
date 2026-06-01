@@ -9,5 +9,4 @@ tqdm
 jupyter
 pyarrow
 fastparquet
-streamlit
 shap
