@@ -1,0 +1,13 @@
+pandas
+numpy
+matplotlib
+scikit-learn
+xgboost
+transformers
+torch
+tqdm
+jupyter
+pyarrow
+fastparquet
+streamlit
+shap
