@@ -1,0 +1,389 @@
+task,model,target,validation_metric,validation_score,params,feature_group
+regression,ridge,future_vol_21d,rmse,0.008066356375135003,{'alpha': 0.1},price
+regression,ridge,future_vol_21d,rmse,0.008065749293119378,{'alpha': 1.0},price
+regression,ridge,future_vol_21d,rmse,0.008059756910950495,{'alpha': 10.0},price
+regression,ridge,future_vol_21d,rmse,0.00803456505834617,{'alpha': 50.0},price
+regression,random_forest,future_vol_21d,rmse,0.007009512373594534,"{'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 300}",price
+regression,random_forest,future_vol_21d,rmse,0.006815161724459659,"{'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 300}",price
+regression,random_forest,future_vol_21d,rmse,0.006749114205558284,"{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 300}",price
+regression,random_forest,future_vol_21d,rmse,0.007142410262243515,"{'max_features': 0.7, 'min_samples_leaf': 2, 'n_estimators': 300}",price
+regression,random_forest,future_vol_21d,rmse,0.006917840271024543,"{'max_features': 0.7, 'min_samples_leaf': 5, 'n_estimators': 300}",price
+regression,random_forest,future_vol_21d,rmse,0.0069080965535983216,"{'max_features': 0.7, 'min_samples_leaf': 10, 'n_estimators': 300}",price
+regression,random_forest,future_vol_21d,rmse,0.007401692202611799,"{'max_features': 1.0, 'min_samples_leaf': 2, 'n_estimators': 300}",price
+regression,random_forest,future_vol_21d,rmse,0.007069264251373386,"{'max_features': 1.0, 'min_samples_leaf': 5, 'n_estimators': 300}",price
+regression,random_forest,future_vol_21d,rmse,0.007062827167017305,"{'max_features': 1.0, 'min_samples_leaf': 10, 'n_estimators': 300}",price
+regression,gradient_boosting,future_vol_21d,rmse,0.006873851759570836,"{'learning_rate': 0.03, 'max_depth': 2, 'n_estimators': 100}",price
+regression,gradient_boosting,future_vol_21d,rmse,0.006747366451890639,"{'learning_rate': 0.03, 'max_depth': 2, 'n_estimators': 200}",price
+regression,gradient_boosting,future_vol_21d,rmse,0.0069137958017560655,"{'learning_rate': 0.03, 'max_depth': 3, 'n_estimators': 100}",price
+regression,gradient_boosting,future_vol_21d,rmse,0.007076772102788754,"{'learning_rate': 0.03, 'max_depth': 3, 'n_estimators': 200}",price
+regression,gradient_boosting,future_vol_21d,rmse,0.006748706729474338,"{'learning_rate': 0.05, 'max_depth': 2, 'n_estimators': 100}",price
+regression,gradient_boosting,future_vol_21d,rmse,0.006987880533173033,"{'learning_rate': 0.05, 'max_depth': 2, 'n_estimators': 200}",price
+regression,gradient_boosting,future_vol_21d,rmse,0.006961492204097766,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100}",price
+regression,gradient_boosting,future_vol_21d,rmse,0.007460375553382686,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 200}",price
+regression,gradient_boosting,future_vol_21d,rmse,0.007002164330278706,"{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}",price
+regression,gradient_boosting,future_vol_21d,rmse,0.007678526782573297,"{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 200}",price
+regression,gradient_boosting,future_vol_21d,rmse,0.007309678881831983,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}",price
+regression,gradient_boosting,future_vol_21d,rmse,0.008360521003761848,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 200}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007369141086965619,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 15}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007611104936128521,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 31}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007853358805721213,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 15}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008017159852679864,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 31}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.00782499509636317,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 15}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008082861739014638,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 31}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008246535146996184,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 15}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008376136278249359,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 31}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008177663333477928,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 15}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008373715946919371,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 31}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.00863817670110038,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 15}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008675142592269074,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 31}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.0073550077926420885,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 15}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007594636673156485,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 31}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007924367058196278,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 15}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.00804027466806998,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 31}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007697735397498168,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 15}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.00803495592703162,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 31}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.00821085042134091,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 15}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008270354829727416,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 31}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.00825174044577493,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 15}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008404065496934544,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 31}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008670013346088652,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 15}",price
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008803842602821141,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 31}",price
+classification,logistic,high_vol_21d,roc_auc,0.9531434911242603,{'C': 0.1},price
+classification,logistic,high_vol_21d,roc_auc,0.9518860946745562,{'C': 1.0},price
+classification,logistic,high_vol_21d,roc_auc,0.9517751479289942,{'C': 10.0},price
+classification,random_forest,high_vol_21d,roc_auc,0.9370469674556212,"{'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 300}",price
+classification,random_forest,high_vol_21d,roc_auc,0.9422984467455622,"{'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 300}",price
+classification,random_forest,high_vol_21d,roc_auc,0.9476886094674556,"{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 300}",price
+classification,random_forest,high_vol_21d,roc_auc,0.9062222633136094,"{'max_features': 0.7, 'min_samples_leaf': 2, 'n_estimators': 300}",price
+classification,random_forest,high_vol_21d,roc_auc,0.9075906065088758,"{'max_features': 0.7, 'min_samples_leaf': 5, 'n_estimators': 300}",price
+classification,random_forest,high_vol_21d,roc_auc,0.9148576183431951,"{'max_features': 0.7, 'min_samples_leaf': 10, 'n_estimators': 300}",price
+classification,random_forest,high_vol_21d,roc_auc,0.884689349112426,"{'max_features': 1.0, 'min_samples_leaf': 2, 'n_estimators': 300}",price
+classification,random_forest,high_vol_21d,roc_auc,0.8985761834319526,"{'max_features': 1.0, 'min_samples_leaf': 5, 'n_estimators': 300}",price
+classification,random_forest,high_vol_21d,roc_auc,0.9031897189349113,"{'max_features': 1.0, 'min_samples_leaf': 10, 'n_estimators': 300}",price
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9217779215976332,"{'learning_rate': 0.03, 'max_depth': 2, 'n_estimators': 100}",price
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9372272559171597,"{'learning_rate': 0.03, 'max_depth': 2, 'n_estimators': 200}",price
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9268028846153846,"{'learning_rate': 0.03, 'max_depth': 3, 'n_estimators': 100}",price
+classification,gradient_boosting,high_vol_21d,roc_auc,0.933852625739645,"{'learning_rate': 0.03, 'max_depth': 3, 'n_estimators': 200}",price
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9328448594674557,"{'learning_rate': 0.05, 'max_depth': 2, 'n_estimators': 100}",price
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9421597633136095,"{'learning_rate': 0.05, 'max_depth': 2, 'n_estimators': 200}",price
+classification,gradient_boosting,high_vol_21d,roc_auc,0.931920303254438,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100}",price
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9303809171597633,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 200}",price
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9435281065088758,"{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}",price
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9446930473372781,"{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 200}",price
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9333672337278106,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}",price
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9269693047337279,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 200}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9382627588757395,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 15}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9286242603550297,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 31}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9381009615384615,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 15}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9300943047337278,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 31}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9378420857988166,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 15}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9284948224852072,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 31}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9357803254437871,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 15}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9294378698224852,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 31}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9368528106508877,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 15}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9318324704142013,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 31}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9332008136094674,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 15}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9333579881656805,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 31}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9376802884615386,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 15}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9264191937869822,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 31}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9399130917159765,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 15}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9295580621301776,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 31}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9389330621301775,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 15}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9315735946745561,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 31}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9353550295857989,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 15}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9249907544378698,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 31}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9300665680473372,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 15}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9149870562130176,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 31}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9281619822485206,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 15}",price
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9174926035502958,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 31}",price
+regression,ridge,future_vol_21d,rmse,0.008249942831922005,{'alpha': 0.1},price_climatebert
+regression,ridge,future_vol_21d,rmse,0.008247022535267705,{'alpha': 1.0},price_climatebert
+regression,ridge,future_vol_21d,rmse,0.00823835985211304,{'alpha': 10.0},price_climatebert
+regression,ridge,future_vol_21d,rmse,0.008211632132396453,{'alpha': 50.0},price_climatebert
+regression,random_forest,future_vol_21d,rmse,0.007164919868067333,"{'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 300}",price_climatebert
+regression,random_forest,future_vol_21d,rmse,0.00680176368113642,"{'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 300}",price_climatebert
+regression,random_forest,future_vol_21d,rmse,0.00674638180040159,"{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 300}",price_climatebert
+regression,random_forest,future_vol_21d,rmse,0.007118821467668467,"{'max_features': 0.7, 'min_samples_leaf': 2, 'n_estimators': 300}",price_climatebert
+regression,random_forest,future_vol_21d,rmse,0.0068426394625837,"{'max_features': 0.7, 'min_samples_leaf': 5, 'n_estimators': 300}",price_climatebert
+regression,random_forest,future_vol_21d,rmse,0.006878078492344503,"{'max_features': 0.7, 'min_samples_leaf': 10, 'n_estimators': 300}",price_climatebert
+regression,random_forest,future_vol_21d,rmse,0.007583031337735538,"{'max_features': 1.0, 'min_samples_leaf': 2, 'n_estimators': 300}",price_climatebert
+regression,random_forest,future_vol_21d,rmse,0.006997283503462728,"{'max_features': 1.0, 'min_samples_leaf': 5, 'n_estimators': 300}",price_climatebert
+regression,random_forest,future_vol_21d,rmse,0.007029274179239966,"{'max_features': 1.0, 'min_samples_leaf': 10, 'n_estimators': 300}",price_climatebert
+regression,gradient_boosting,future_vol_21d,rmse,0.007081957038296663,"{'learning_rate': 0.03, 'max_depth': 2, 'n_estimators': 100}",price_climatebert
+regression,gradient_boosting,future_vol_21d,rmse,0.007005694570651601,"{'learning_rate': 0.03, 'max_depth': 2, 'n_estimators': 200}",price_climatebert
+regression,gradient_boosting,future_vol_21d,rmse,0.007138102590288237,"{'learning_rate': 0.03, 'max_depth': 3, 'n_estimators': 100}",price_climatebert
+regression,gradient_boosting,future_vol_21d,rmse,0.007412099925225247,"{'learning_rate': 0.03, 'max_depth': 3, 'n_estimators': 200}",price_climatebert
+regression,gradient_boosting,future_vol_21d,rmse,0.006929269018402662,"{'learning_rate': 0.05, 'max_depth': 2, 'n_estimators': 100}",price_climatebert
+regression,gradient_boosting,future_vol_21d,rmse,0.007158071994416698,"{'learning_rate': 0.05, 'max_depth': 2, 'n_estimators': 200}",price_climatebert
+regression,gradient_boosting,future_vol_21d,rmse,0.007269576718004424,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100}",price_climatebert
+regression,gradient_boosting,future_vol_21d,rmse,0.007657121788352796,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 200}",price_climatebert
+regression,gradient_boosting,future_vol_21d,rmse,0.007262247747944207,"{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}",price_climatebert
+regression,gradient_boosting,future_vol_21d,rmse,0.008063529190736461,"{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 200}",price_climatebert
+regression,gradient_boosting,future_vol_21d,rmse,0.0075584000538180445,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}",price_climatebert
+regression,gradient_boosting,future_vol_21d,rmse,0.008191651156369887,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 200}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007452337157860864,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 15}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007789224937562439,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 31}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008263832960314145,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 15}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.00837886181868227,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 31}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008139444912229643,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 15}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008147375562001928,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 31}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008611236313857447,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 15}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.00857238419904096,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 31}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008469889641481137,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 15}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008948098566890906,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 31}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008906084720398449,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 15}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.009260758326657646,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 31}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007346265866421846,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 15}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007683614631666941,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 31}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.00818304374432865,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 15}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008288093860065123,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 31}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008101649143793997,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 15}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.00822040022163738,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 31}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008639824098636959,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 15}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.00873182558132134,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 31}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008743681914634802,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 15}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008901265909378887,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 31}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.00916076597647783,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 15}",price_climatebert
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.00921892215915537,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 31}",price_climatebert
+classification,logistic,high_vol_21d,roc_auc,0.9356508875739646,{'C': 0.1},price_climatebert
+classification,logistic,high_vol_21d,roc_auc,0.9307969674556212,{'C': 1.0},price_climatebert
+classification,logistic,high_vol_21d,roc_auc,0.9297799556213018,{'C': 10.0},price_climatebert
+classification,random_forest,high_vol_21d,roc_auc,0.943491124260355,"{'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 300}",price_climatebert
+classification,random_forest,high_vol_21d,roc_auc,0.9486131656804734,"{'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 300}",price_climatebert
+classification,random_forest,high_vol_21d,roc_auc,0.9518491124260355,"{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 300}",price_climatebert
+classification,random_forest,high_vol_21d,roc_auc,0.8953032544378698,"{'max_features': 0.7, 'min_samples_leaf': 2, 'n_estimators': 300}",price_climatebert
+classification,random_forest,high_vol_21d,roc_auc,0.9059171597633136,"{'max_features': 0.7, 'min_samples_leaf': 5, 'n_estimators': 300}",price_climatebert
+classification,random_forest,high_vol_21d,roc_auc,0.9115754437869823,"{'max_features': 0.7, 'min_samples_leaf': 10, 'n_estimators': 300}",price_climatebert
+classification,random_forest,high_vol_21d,roc_auc,0.8811852810650886,"{'max_features': 1.0, 'min_samples_leaf': 2, 'n_estimators': 300}",price_climatebert
+classification,random_forest,high_vol_21d,roc_auc,0.8973002958579882,"{'max_features': 1.0, 'min_samples_leaf': 5, 'n_estimators': 300}",price_climatebert
+classification,random_forest,high_vol_21d,roc_auc,0.903069526627219,"{'max_features': 1.0, 'min_samples_leaf': 10, 'n_estimators': 300}",price_climatebert
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9226238905325445,"{'learning_rate': 0.03, 'max_depth': 2, 'n_estimators': 100}",price_climatebert
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9373289571005917,"{'learning_rate': 0.03, 'max_depth': 2, 'n_estimators': 200}",price_climatebert
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9226839866863906,"{'learning_rate': 0.03, 'max_depth': 3, 'n_estimators': 100}",price_climatebert
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9357294748520709,"{'learning_rate': 0.03, 'max_depth': 3, 'n_estimators': 200}",price_climatebert
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9343703772189349,"{'learning_rate': 0.05, 'max_depth': 2, 'n_estimators': 100}",price_climatebert
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9403984837278107,"{'learning_rate': 0.05, 'max_depth': 2, 'n_estimators': 200}",price_climatebert
+classification,gradient_boosting,high_vol_21d,roc_auc,0.932706176035503,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100}",price_climatebert
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9370377218934911,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 200}",price_climatebert
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9409855769230768,"{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}",price_climatebert
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9418038091715977,"{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 200}",price_climatebert
+classification,gradient_boosting,high_vol_21d,roc_auc,0.938128698224852,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}",price_climatebert
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9337370562130178,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 200}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9402320636094674,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 15}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9303069526627219,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 31}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.942760724852071,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 15}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9379437869822485,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 31}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9371579142011834,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 15}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9352903106508875,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 31}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9391364644970415,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 15}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9321838017751479,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 31}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9406342455621303,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 15}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9297059911242603,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 31}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9410410502958579,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 15}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9295857988165681,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 31}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9372365014792899,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 15}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9305380917159763,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 31}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9428901627218935,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 15}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9341068786982248,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 31}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9432137573964497,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 15}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9363350591715975,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 31}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9452200443786982,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 15}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9345136834319527,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 31}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9398113905325444,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 15}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.93020525147929,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 31}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9359929733727811,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 15}",price_climatebert
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9279400887573964,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 31}",price_climatebert
+regression,ridge,future_vol_21d,rmse,0.009211184522252164,{'alpha': 0.1},price_all_news
+regression,ridge,future_vol_21d,rmse,0.009147414653693718,{'alpha': 1.0},price_all_news
+regression,ridge,future_vol_21d,rmse,0.00897239908608464,{'alpha': 10.0},price_all_news
+regression,ridge,future_vol_21d,rmse,0.0087756200159867,{'alpha': 50.0},price_all_news
+regression,random_forest,future_vol_21d,rmse,0.006966096566288498,"{'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 300}",price_all_news
+regression,random_forest,future_vol_21d,rmse,0.006855966251301572,"{'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 300}",price_all_news
+regression,random_forest,future_vol_21d,rmse,0.0068168537353609894,"{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 300}",price_all_news
+regression,random_forest,future_vol_21d,rmse,0.006970656733805283,"{'max_features': 0.7, 'min_samples_leaf': 2, 'n_estimators': 300}",price_all_news
+regression,random_forest,future_vol_21d,rmse,0.006762707768146484,"{'max_features': 0.7, 'min_samples_leaf': 5, 'n_estimators': 300}",price_all_news
+regression,random_forest,future_vol_21d,rmse,0.006808506262368457,"{'max_features': 0.7, 'min_samples_leaf': 10, 'n_estimators': 300}",price_all_news
+regression,random_forest,future_vol_21d,rmse,0.0072258174646432465,"{'max_features': 1.0, 'min_samples_leaf': 2, 'n_estimators': 300}",price_all_news
+regression,random_forest,future_vol_21d,rmse,0.006900038395249485,"{'max_features': 1.0, 'min_samples_leaf': 5, 'n_estimators': 300}",price_all_news
+regression,random_forest,future_vol_21d,rmse,0.006912981361354304,"{'max_features': 1.0, 'min_samples_leaf': 10, 'n_estimators': 300}",price_all_news
+regression,gradient_boosting,future_vol_21d,rmse,0.00705268725625319,"{'learning_rate': 0.03, 'max_depth': 2, 'n_estimators': 100}",price_all_news
+regression,gradient_boosting,future_vol_21d,rmse,0.006931508929301388,"{'learning_rate': 0.03, 'max_depth': 2, 'n_estimators': 200}",price_all_news
+regression,gradient_boosting,future_vol_21d,rmse,0.007005426074607227,"{'learning_rate': 0.03, 'max_depth': 3, 'n_estimators': 100}",price_all_news
+regression,gradient_boosting,future_vol_21d,rmse,0.007264073269948434,"{'learning_rate': 0.03, 'max_depth': 3, 'n_estimators': 200}",price_all_news
+regression,gradient_boosting,future_vol_21d,rmse,0.006879959252463388,"{'learning_rate': 0.05, 'max_depth': 2, 'n_estimators': 100}",price_all_news
+regression,gradient_boosting,future_vol_21d,rmse,0.007252438566768826,"{'learning_rate': 0.05, 'max_depth': 2, 'n_estimators': 200}",price_all_news
+regression,gradient_boosting,future_vol_21d,rmse,0.007337078577081993,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100}",price_all_news
+regression,gradient_boosting,future_vol_21d,rmse,0.007818104232053353,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 200}",price_all_news
+regression,gradient_boosting,future_vol_21d,rmse,0.007191334495519371,"{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}",price_all_news
+regression,gradient_boosting,future_vol_21d,rmse,0.008041510933078496,"{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 200}",price_all_news
+regression,gradient_boosting,future_vol_21d,rmse,0.007721156196577216,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}",price_all_news
+regression,gradient_boosting,future_vol_21d,rmse,0.008493053469261446,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 200}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007380795978230415,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 15}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007762902468899889,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 31}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007913086630352605,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 15}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008292170530731238,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 31}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007936154969196939,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 15}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008182557573675597,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 31}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008364065616991857,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 15}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008584650331210662,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 31}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008426193687878974,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 15}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008666635354752962,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 31}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008696620148578721,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 15}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.00888725903957389,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 31}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.00743901612338487,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 15}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007644284039127996,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 31}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007981424040129049,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 15}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008240325119804921,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 31}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007977313879744537,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 15}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007999622896097472,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 31}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008486505497278005,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 15}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008451496709149813,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 31}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008175305033973117,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 15}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008638659266507628,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 31}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008387616660787363,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 15}",price_all_news
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008776181064310865,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 31}",price_all_news
+classification,logistic,high_vol_21d,roc_auc,0.9457100591715977,{'C': 0.1},price_all_news
+classification,logistic,high_vol_21d,roc_auc,0.9410872781065088,{'C': 1.0},price_all_news
+classification,logistic,high_vol_21d,roc_auc,0.9402459319526626,{'C': 10.0},price_all_news
+classification,random_forest,high_vol_21d,roc_auc,0.9288646449704142,"{'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 300}",price_all_news
+classification,random_forest,high_vol_21d,roc_auc,0.9345968934911242,"{'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 300}",price_all_news
+classification,random_forest,high_vol_21d,roc_auc,0.9481231508875739,"{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 300}",price_all_news
+classification,random_forest,high_vol_21d,roc_auc,0.8801682692307692,"{'max_features': 0.7, 'min_samples_leaf': 2, 'n_estimators': 300}",price_all_news
+classification,random_forest,high_vol_21d,roc_auc,0.8970784023668639,"{'max_features': 0.7, 'min_samples_leaf': 5, 'n_estimators': 300}",price_all_news
+classification,random_forest,high_vol_21d,roc_auc,0.9007026627218935,"{'max_features': 0.7, 'min_samples_leaf': 10, 'n_estimators': 300}",price_all_news
+classification,random_forest,high_vol_21d,roc_auc,0.8645062869822486,"{'max_features': 1.0, 'min_samples_leaf': 2, 'n_estimators': 300}",price_all_news
+classification,random_forest,high_vol_21d,roc_auc,0.8773021449704141,"{'max_features': 1.0, 'min_samples_leaf': 5, 'n_estimators': 300}",price_all_news
+classification,random_forest,high_vol_21d,roc_auc,0.8923539201183432,"{'max_features': 1.0, 'min_samples_leaf': 10, 'n_estimators': 300}",price_all_news
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9225545488165681,"{'learning_rate': 0.03, 'max_depth': 2, 'n_estimators': 100}",price_all_news
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9390255177514792,"{'learning_rate': 0.03, 'max_depth': 2, 'n_estimators': 200}",price_all_news
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9175573224852072,"{'learning_rate': 0.03, 'max_depth': 3, 'n_estimators': 100}",price_all_news
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9257581360946746,"{'learning_rate': 0.03, 'max_depth': 3, 'n_estimators': 200}",price_all_news
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9384430473372781,"{'learning_rate': 0.05, 'max_depth': 2, 'n_estimators': 100}",price_all_news
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9442538831360947,"{'learning_rate': 0.05, 'max_depth': 2, 'n_estimators': 200}",price_all_news
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9257396449704143,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100}",price_all_news
+classification,gradient_boosting,high_vol_21d,roc_auc,0.926765902366864,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 200}",price_all_news
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9415541789940828,"{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}",price_all_news
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9365523298816567,"{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 200}",price_all_news
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9221939718934911,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}",price_all_news
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9255917159763314,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 200}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9314811390532545,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 15}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.923072300295858,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 31}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9340421597633136,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 15}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9318694526627219,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 31}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9365384615384615,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 15}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9293084319526628,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 31}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9306582840236687,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 15}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9262019230769232,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 31}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.930417899408284,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 15}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9287259615384614,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 31}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9187592455621301,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 15}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.910669378698225,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 31}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9304178994082842,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 15}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9252866124260355,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 31}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.932340976331361,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 15}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9308247041420118,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 31}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9337647928994084,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 15}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.935318047337278,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 31}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9221246301775148,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 15}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9324241863905326,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 31}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9229474852071006,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 15}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9242788461538461,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 31}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9158746301775148,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 15}",price_all_news
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9186760355029586,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 31}",price_all_news
+regression,ridge,future_vol_21d,rmse,0.009211184522252164,{'alpha': 0.1},full
+regression,ridge,future_vol_21d,rmse,0.009147414653693718,{'alpha': 1.0},full
+regression,ridge,future_vol_21d,rmse,0.00897239908608464,{'alpha': 10.0},full
+regression,ridge,future_vol_21d,rmse,0.0087756200159867,{'alpha': 50.0},full
+regression,random_forest,future_vol_21d,rmse,0.006966096566288498,"{'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 300}",full
+regression,random_forest,future_vol_21d,rmse,0.006855966251301572,"{'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 300}",full
+regression,random_forest,future_vol_21d,rmse,0.0068168537353609894,"{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 300}",full
+regression,random_forest,future_vol_21d,rmse,0.006970656733805283,"{'max_features': 0.7, 'min_samples_leaf': 2, 'n_estimators': 300}",full
+regression,random_forest,future_vol_21d,rmse,0.006762707768146484,"{'max_features': 0.7, 'min_samples_leaf': 5, 'n_estimators': 300}",full
+regression,random_forest,future_vol_21d,rmse,0.006808506262368457,"{'max_features': 0.7, 'min_samples_leaf': 10, 'n_estimators': 300}",full
+regression,random_forest,future_vol_21d,rmse,0.0072258174646432465,"{'max_features': 1.0, 'min_samples_leaf': 2, 'n_estimators': 300}",full
+regression,random_forest,future_vol_21d,rmse,0.006900038395249486,"{'max_features': 1.0, 'min_samples_leaf': 5, 'n_estimators': 300}",full
+regression,random_forest,future_vol_21d,rmse,0.006912981361354304,"{'max_features': 1.0, 'min_samples_leaf': 10, 'n_estimators': 300}",full
+regression,gradient_boosting,future_vol_21d,rmse,0.00705268725625319,"{'learning_rate': 0.03, 'max_depth': 2, 'n_estimators': 100}",full
+regression,gradient_boosting,future_vol_21d,rmse,0.006931508929301388,"{'learning_rate': 0.03, 'max_depth': 2, 'n_estimators': 200}",full
+regression,gradient_boosting,future_vol_21d,rmse,0.007005426074607227,"{'learning_rate': 0.03, 'max_depth': 3, 'n_estimators': 100}",full
+regression,gradient_boosting,future_vol_21d,rmse,0.007264073269948434,"{'learning_rate': 0.03, 'max_depth': 3, 'n_estimators': 200}",full
+regression,gradient_boosting,future_vol_21d,rmse,0.006879959252463388,"{'learning_rate': 0.05, 'max_depth': 2, 'n_estimators': 100}",full
+regression,gradient_boosting,future_vol_21d,rmse,0.007252438566768826,"{'learning_rate': 0.05, 'max_depth': 2, 'n_estimators': 200}",full
+regression,gradient_boosting,future_vol_21d,rmse,0.007337078577081993,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100}",full
+regression,gradient_boosting,future_vol_21d,rmse,0.007818104232053353,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 200}",full
+regression,gradient_boosting,future_vol_21d,rmse,0.007191334495519371,"{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}",full
+regression,gradient_boosting,future_vol_21d,rmse,0.008041510933078496,"{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 200}",full
+regression,gradient_boosting,future_vol_21d,rmse,0.007721156196577216,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}",full
+regression,gradient_boosting,future_vol_21d,rmse,0.008493053469261446,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 200}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007380795978230415,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 15}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007762902468899889,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 31}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007913086630352605,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 15}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008292170530731238,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 31}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007936154969196939,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 15}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008182557573675597,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 31}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008364065616991857,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 15}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008584650331210662,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 31}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008426193687878974,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 15}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008666635354752962,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 31}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008696620148578721,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 15}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.00888725903957389,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 31}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.00743901612338487,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 15}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007644284039127996,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 31}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007981424040129049,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 15}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008240325119804921,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 31}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007977313879744537,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 15}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.007999622896097472,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 31}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008486505497278005,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 15}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008451496709149813,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 31}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008175305033973117,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 15}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008638659266507628,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 31}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008387616660787363,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 15}",full
+regression,hist_gradient_boosting,future_vol_21d,rmse,0.008776181064310865,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 31}",full
+classification,logistic,high_vol_21d,roc_auc,0.9457100591715977,{'C': 0.1},full
+classification,logistic,high_vol_21d,roc_auc,0.9410872781065088,{'C': 1.0},full
+classification,logistic,high_vol_21d,roc_auc,0.9402459319526626,{'C': 10.0},full
+classification,random_forest,high_vol_21d,roc_auc,0.9288646449704142,"{'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 300}",full
+classification,random_forest,high_vol_21d,roc_auc,0.9345968934911242,"{'max_features': 'sqrt', 'min_samples_leaf': 5, 'n_estimators': 300}",full
+classification,random_forest,high_vol_21d,roc_auc,0.9481231508875739,"{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 300}",full
+classification,random_forest,high_vol_21d,roc_auc,0.8801682692307692,"{'max_features': 0.7, 'min_samples_leaf': 2, 'n_estimators': 300}",full
+classification,random_forest,high_vol_21d,roc_auc,0.8970784023668639,"{'max_features': 0.7, 'min_samples_leaf': 5, 'n_estimators': 300}",full
+classification,random_forest,high_vol_21d,roc_auc,0.9007026627218935,"{'max_features': 0.7, 'min_samples_leaf': 10, 'n_estimators': 300}",full
+classification,random_forest,high_vol_21d,roc_auc,0.8645062869822485,"{'max_features': 1.0, 'min_samples_leaf': 2, 'n_estimators': 300}",full
+classification,random_forest,high_vol_21d,roc_auc,0.8773021449704141,"{'max_features': 1.0, 'min_samples_leaf': 5, 'n_estimators': 300}",full
+classification,random_forest,high_vol_21d,roc_auc,0.8923539201183432,"{'max_features': 1.0, 'min_samples_leaf': 10, 'n_estimators': 300}",full
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9225545488165681,"{'learning_rate': 0.03, 'max_depth': 2, 'n_estimators': 100}",full
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9390255177514792,"{'learning_rate': 0.03, 'max_depth': 2, 'n_estimators': 200}",full
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9175573224852072,"{'learning_rate': 0.03, 'max_depth': 3, 'n_estimators': 100}",full
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9257581360946746,"{'learning_rate': 0.03, 'max_depth': 3, 'n_estimators': 200}",full
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9384430473372781,"{'learning_rate': 0.05, 'max_depth': 2, 'n_estimators': 100}",full
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9442538831360947,"{'learning_rate': 0.05, 'max_depth': 2, 'n_estimators': 200}",full
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9257396449704143,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100}",full
+classification,gradient_boosting,high_vol_21d,roc_auc,0.926765902366864,"{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 200}",full
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9415541789940828,"{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 100}",full
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9365523298816567,"{'learning_rate': 0.1, 'max_depth': 2, 'n_estimators': 200}",full
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9221939718934911,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 100}",full
+classification,gradient_boosting,high_vol_21d,roc_auc,0.9255917159763314,"{'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 200}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9314811390532545,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 15}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.923072300295858,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 31}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9340421597633136,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 15}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9318694526627219,"{'l2_regularization': 0.0, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 31}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9365384615384615,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 15}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9293084319526628,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 31}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9306582840236687,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 15}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9262019230769232,"{'l2_regularization': 0.0, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 31}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.930417899408284,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 15}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9287259615384614,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 31}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9187592455621301,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 15}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.910669378698225,"{'l2_regularization': 0.0, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 31}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9304178994082842,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 15}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9252866124260355,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 100, 'max_leaf_nodes': 31}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.932340976331361,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 15}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9308247041420118,"{'l2_regularization': 0.1, 'learning_rate': 0.03, 'max_iter': 200, 'max_leaf_nodes': 31}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9337647928994084,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 15}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.935318047337278,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 100, 'max_leaf_nodes': 31}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9221246301775148,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 15}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9324241863905326,"{'l2_regularization': 0.1, 'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 31}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9229474852071006,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 15}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9242788461538461,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 31}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9158746301775148,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 15}",full
+classification,hist_gradient_boosting,high_vol_21d,roc_auc,0.9186760355029586,"{'l2_regularization': 0.1, 'learning_rate': 0.1, 'max_iter': 200, 'max_leaf_nodes': 31}",full

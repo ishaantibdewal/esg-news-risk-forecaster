@@ -1,49 +1,136 @@
-ESG2Risk-Inspired Volatility Forecasting
-========================================
+# ESG News Risk Forecaster
 
-This DSC 148 project reproduces and extends the ESG2Risk paper idea with
-FNSPID financial news and price history. The core question is whether
-ESG-related financial news improves future realized volatility prediction
-beyond price-history-only and sentiment-only baselines.
+This DSC 148 project reproduces and extends the ESG2Risk idea: can ESG-sensitive
+financial news improve short-horizon stock risk forecasts beyond market-only
+baselines?
 
-Key implementation rules:
+The pipeline builds a weekly ticker panel from FNSPID news and price histories,
+engineers price, ESG keyword, FinBERT sentiment, and ClimateBERT relevance
+features, then evaluates volatility regression and high-volatility
+classification with chronological train/validation/test splits.
 
-- Do not load `data/raw/fnspid/nasdaq_external_data.csv` fully with
-  `pd.read_csv(news_path)`.
-- Inspect the news file only with bounded reads such as `nrows=1000`.
-- Process news with chunks, ticker/date filters, and Parquet outputs.
-- Keep raw, interim, processed, model, and large output files out of git.
+## Repository Contents
 
-Main pipeline:
+- `src/`: reusable pipeline code for loading, filtering, feature generation,
+  labeling, modeling, evaluation, and visualization.
+- `notebooks/results_report.ipynb`: presentation-oriented notebook walkthrough of
+  the generated results.
+- `report/main.tex` and `report/main.pdf`: ACM-style final report.
+- `report/README.md`: local report build instructions.
+- `outputs/reports/results_summary.md`: generated metric summary.
+- `outputs/tables/` and `outputs/figures/`: generated result tables and plots.
+- `app/streamlit_app.py`: optional interactive demo over saved prediction tables.
 
-1. Safely inspect raw news and price schemas.
-2. Validate the handpicked stock universe and benchmark.
-3. Filter FNSPID news by ticker/date in chunks.
-4. Clean price histories and build future volatility labels.
-5. Build weekly price, ESG keyword, FinBERT, and ClimateBERT features.
-6. Merge a weekly modeling panel.
-7. Compare price-only, ESG-keyword, FinBERT, ClimateBERT, combined, and full
-   models with time-aware validation.
-8. Evaluate with regression/classification metrics and ESG2Risk-style
-   predicted-risk quintile analysis.
+Large raw/intermediate/model artifacts are intentionally not tracked. The raw
+FNSPID news CSV is about 23 GB and the full local `data/` directory is much
+larger than a normal GitHub submission.
 
-Reusable implementation code lives in `src/`. Notebooks in `notebooks/` should
-call those modules rather than duplicating pipeline logic.
+## Setup
 
-Recommended command order:
+Use Python 3.10 or newer.
 
 ```bash
-./.venv/bin/python -m src.pipeline setup
-./.venv/bin/python -m src.pipeline inspect --nrows 1000 --scan-news
-./.venv/bin/python -m src.pipeline filter-news --chunksize 100000
-./.venv/bin/python -m src.pipeline prices-labels
-./.venv/bin/python -m src.pipeline features
-./.venv/bin/python -m src.pipeline finbert --batch-size 16
-./.venv/bin/python -m src.pipeline climatebert --batch-size 16
-./.venv/bin/python -m src.pipeline panel
-./.venv/bin/python -m src.pipeline model-eval
-./.venv/bin/python -m src.pipeline report
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
-The transformer commands intentionally score only ESG keyword-filtered articles
-by default. Use `--all-news` only for a larger compute run.
+If `torch` installation needs platform-specific handling, install the
+appropriate build from the PyTorch instructions first, then rerun
+`pip install -r requirements.txt`.
+
+## Data Layout
+
+To fully reproduce the pipeline, place FNSPID under:
+
+```text
+data/raw/fnspid/
+  nasdaq_external_data.csv
+  full_history/
+    AAPL.csv
+    MSFT.csv
+    ...
+```
+
+The code never loads the 23 GB news file with an unbounded `pd.read_csv`.
+Inspection uses bounded reads, and production filtering uses chunks.
+
+## Full Reproduction
+
+Run commands from the repository root after the raw data is in place:
+
+```bash
+python -m src.pipeline setup
+python -m src.pipeline inspect --nrows 1000 --scan-news
+python -m src.pipeline filter-news --chunksize 100000
+python -m src.pipeline prices-labels
+python -m src.pipeline features
+python -m src.pipeline finbert --batch-size 16
+python -m src.pipeline climatebert --batch-size 16
+python -m src.pipeline panel
+python -m src.pipeline model-eval
+python -m src.pipeline tuned-model-eval
+python -m src.pipeline report
+```
+
+The transformer stages score ESG keyword-filtered articles by default to keep
+runtime manageable. Use `--all-news` only for a larger compute run. For a smoke
+test of the transformer commands, add `--max-articles 100`.
+
+## Results Walkthrough
+
+For the best grading/demo path, use the notebook as the primary demo:
+
+```bash
+jupyter notebook notebooks/results_report.ipynb
+```
+
+The notebook reads generated artifacts and walks through dataset construction,
+EDA, chronological splits, tuned results, ablations, diagnostics, and
+interpretation. This is the clearest "paper results" style demo.
+
+## Optional Interactive Demo
+
+After prediction tables exist, run:
+
+```bash
+streamlit run app/streamlit_app.py
+```
+
+The demo lets a user choose a ticker, week, and saved model prediction, then
+compares the selected ticker-week to peer predictions from the same week.
+
+## Main Generated Results
+
+The reported test panel contains 5,852 ticker-weeks across 14 tickers from
+2016-2023. The tuned 2023 test results show:
+
+- Price-only remains a strong baseline.
+- Price plus ClimateBERT is the best selected combined regression setup with
+  RMSE near 0.0063 and `R^2` near 0.52.
+- Tuned classification reaches ROC-AUC near 0.91, with climate-aware text adding
+  modest incremental value in the selected combined model.
+- ESG/news features are useful as incremental risk signals, not as substitutes
+  for market history.
+
+See `outputs/reports/results_summary.md`, `outputs/tables/`, and `report/main.pdf`
+for the full numbers.
+
+## Project Criteria Mapping
+
+- Dataset and EDA: FNSPID news plus price histories; raw inventory, ticker/year
+  coverage, target distributions, ESG category diagnostics, and coverage tables.
+- Predictive task: 21-trading-day realized volatility regression and
+  high-volatility classification with chronological splits.
+- Baselines: market-only models, news-only models, ESG keyword models, FinBERT,
+  ClimateBERT, combined feature groups, and full feature groups.
+- Model: ridge/logistic baselines plus tree ensembles and tuned histogram
+  gradient boosting/random forest configurations using engineered price and text
+  features.
+- Literature: ESG2Risk, FNSPID, financial NLP, FinBERT, ClimateBERT, volatility
+  forecasting, and related text-risk work are discussed in the report.
+- Results: model comparisons, ablations, tuned-vs-untuned checks, bootstrap delta
+  checks, leakage checks, risk quintile analysis, and error/feature diagnostics.
+- GitHub reproducibility: this README gives environment setup, data layout,
+  staged commands, notebook usage, report build location, and demo instructions.
+

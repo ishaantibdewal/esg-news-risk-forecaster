@@ -1,11 +1,9 @@
 data/raw/
 data/interim/
 data/processed/
-outputs/figures/
-outputs/tables/
 outputs/models/
-outputs/reports/
 .venv/
+.vscode/
 *.parquet
 *.pkl
 *.joblib
@@ -18,3 +16,11 @@ __pycache__/
 .ipynb_checkpoints/
 .DS_Store
 .env
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz

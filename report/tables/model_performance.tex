@@ -1,0 +1,21 @@
+\begin{table*}[t]
+  \caption{Best validation-tuned model performance on the 2023 test period. Lower RMSE and MAE are better; higher $R^2$, ROC-AUC, PR-AUC, and F1 are better.}
+  \label{tab:model-performance}
+  \centering
+  \small
+  \setlength{\tabcolsep}{4pt}
+  \begin{tabular}{lllrrrrrr}
+    \toprule
+    Task & Feature group & Model & RMSE & MAE & $R^2$ & ROC-AUC & PR-AUC & F1 \\
+    \midrule
+    Reg. & Price & HGB & 0.0064 & 0.0048 & 0.504 & -- & -- & -- \\
+    Reg. & Price + ClimateBERT & HGB & 0.0063 & 0.0047 & 0.524 & -- & -- & -- \\
+    Reg. & Price + All News & HGB & 0.0065 & 0.0049 & 0.497 & -- & -- & -- \\
+    Reg. & Full & HGB & 0.0065 & 0.0049 & 0.497 & -- & -- & -- \\
+    Class. & Price & HGB & -- & -- & -- & 0.912 & 0.841 & 0.798 \\
+    Class. & Price + ClimateBERT & HGB & -- & -- & -- & 0.914 & 0.851 & 0.802 \\
+    Class. & Price + All News & HGB & -- & -- & -- & 0.913 & 0.836 & 0.777 \\
+    Class. & Full & HGB & -- & -- & -- & 0.913 & 0.836 & 0.777 \\
+    \bottomrule
+  \end{tabular}
+\end{table*}

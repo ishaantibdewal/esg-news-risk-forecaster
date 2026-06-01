@@ -1,0 +1,17 @@
+\begin{table}[H]
+  \caption{Ablation summary relative to tuned price-only baselines. Positive $\Delta$RMSE means lower error than price-only; positive $\Delta$AUC means higher ROC-AUC than price-only.}
+  \label{tab:ablation}
+  \centering
+  \small
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabular}{lrrrr}
+    \toprule
+    Feature group & RMSE & $\Delta$RMSE & AUC & $\Delta$AUC \\
+    \midrule
+    Price & 0.0064 & 0.0000 & 0.912 & 0.000 \\
+    Price + ClimateBERT & 0.0063 & 0.0001 & 0.914 & 0.002 \\
+    Price + All News & 0.0065 & 0.0000 & 0.913 & 0.001 \\
+    Full & 0.0065 & 0.0000 & 0.913 & 0.001 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

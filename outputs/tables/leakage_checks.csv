@@ -1,0 +1,3 @@
+check,passes,detail
+week_end_date_present,True,Panel has weekly key.
+future_label_columns,True,"future_vol_5d, future_return_5d, future_vol_10d, future_return_10d, future_vol_21d, future_return_21d, future_vol_63d, future_return_63d"

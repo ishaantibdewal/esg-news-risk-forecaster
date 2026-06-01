@@ -1,0 +1,4 @@
+item,value
+news_csv_gb,23.232979597
+price_file_count,7693
+news_columns,Unnamed: 0|Date|Article_title|Stock_symbol|Url|Publisher|Author|Article|Lsa_summary|Luhn_summary|Textrank_summary|Lexrank_summary

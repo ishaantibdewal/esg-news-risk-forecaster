@@ -1,0 +1,9 @@
+task,metric,feature_group,untuned_model,untuned_value,tuned_model,tuned_value,improvement
+regression,rmse,price,random_forest,0.0071360032521912,hist_gradient_boosting,0.00644081582839999,0.0006951874237912103
+regression,rmse,price_climatebert,random_forest,0.0073199791911527,hist_gradient_boosting,0.006310938209522396,0.001009040981630304
+regression,rmse,price_all_news,hist_gradient_boosting,0.0077633908626889,hist_gradient_boosting,0.006486783399868778,0.0012766074628201216
+regression,rmse,full,hist_gradient_boosting,0.0077633908626889,hist_gradient_boosting,0.006486783399868778,0.0012766074628201216
+classification,roc_auc,price,gradient_boosting,0.9095460428994084,hist_gradient_boosting,0.912287352071006,0.002741309171597539
+classification,roc_auc,price_climatebert,gradient_boosting,0.902242048816568,hist_gradient_boosting,0.9144323224852071,0.012190273668639118
+classification,roc_auc,price_all_news,random_forest,0.8976608727810651,hist_gradient_boosting,0.9133783284023668,0.015717455621301668
+classification,roc_auc,full,random_forest,0.8976608727810651,hist_gradient_boosting,0.9133783284023668,0.015717455621301668
